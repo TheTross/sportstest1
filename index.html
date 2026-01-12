@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor Pro - Professional Sports Betting Simulator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%); }
+        .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); }
+    </style>
+</head>
+<body class="min-h-screen gradient-bg text-white p-4">
+    <header class="text-center mb-12">
+        <h1 class="text-5xl font-bold mb-4 drop-shadow-2xl">🏈 Predictor Pro</h1>
+        <p class="text-xl opacity-90 max-w-2xl mx-auto">Professional 1M Monte Carlo simulator. NFL • NHL • NBA • MLB • Soccer. Export edges for betting.</p>
+        <p class="text-lg mt-2 opacity-75">$29 lifetime license - Gumroad coming soon</p>
+    </header>
+    <main class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow-2xl">
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div>
+                <label class="block mb-2 font-semibold">Sport</label>
+                <select id="sport" class="w-full p-3 rounded-xl bg-white/20 text-white border border-white/30 focus:ring-2 focus:ring-blue-400">
+                    <option value="nhl">NHL (Poisson Goals)</option>
+                    <option value="nfl">NFL (Poisson Points)</option>
+                    <option value="nba">NBA (Normal Points)</option>
+                    <option value="mlb">MLB (Poisson Runs)</option>
+                    <option value="soccer">Soccer (Poisson Goals)</option>
+                </select>
+            </div>
+            <div>
+                <label class="block mb-2 font-semibold">Currency</label>
+                <select id="currency" class="w-full p-3 rounded-xl bg-white/20 text-white border border-white/30 focus:ring-2 
